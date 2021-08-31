@@ -1,0 +1,18 @@
+{
+  "metadata": {
+      "title": "DWC Browser",
+      "description": "First version HuC Browser for dataset DWC",
+      "project": "REPUBLIC",
+      "author": "Rob Zeeman",
+      "date": "2021-01-26"
+  },
+  "data": {
+      "datasource": {
+          "type": "",
+          "properties": {
+              
+          }
+      },
+      "entities": []
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "dataset_id": "u33707283d426f900d4d33707283d426f900d4d0d__delegates",
+  "prefix": "http___example_org_datasets_u33707283d426f900d4d33707283d426f900d4d0d_delegates_rawData_5d1240e1_6b39_44b7_920b_272d00e2e66b_delegates_csv_",
+  "collection_prefix": "collections_",
+  "notion_prefix": "props_",
+  "entity": {
+    "name": "1List",
+    "title": "delegates",
+    "notions": [
+      {
+        "name": "was_gedeputeerde",
+        "title": ""
+      },
+      {
+        "name": "sterfjaar",
+        "title": ""
+      },
+      {
+        "name": "hypothetical_life_from",
+        "title": ""
+      },
+      {
+        "name": "tim_id",
+        "title": ""
+      },
+      {
+        "name": "geboortejaar",
+        "title": ""
+      },
+      {
+        "name": "period_active_to",
+        "title": ""
+      },
+      {
+        "name": "id",
+        "title": ""
+      },
+      {
+        "name": "name",
+        "title": ""
+      },
+      {
+        "name": "colleges",
+        "title": ""
+      }
+    ],
+    "doc_name": "delegates"
+  }
+}

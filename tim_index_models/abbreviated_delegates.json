@@ -1,0 +1,65 @@
+{
+  "dataset_id": "u33707283d426f900d4d33707283d426f900d4d0d__abbreviated_delegates",
+  "prefix": "http___example_org_datasets_u33707283d426f900d4d33707283d426f900d4d0d_abbreviated_delegates_rawData_0c9d2688_696f_4a80_8595_1eb8cc52410d_abbreviated_delegates_csv_",
+  "collection_prefix": "collections_",
+  "notion_prefix": "props_",
+  "entity": {
+    "name": "1List",
+    "title": "abbreviated_delegates",
+    "notions": [
+      {
+        "name": "age_at_repr",
+        "title": ""
+      },
+      {
+        "name": "id",
+        "title": ""
+      },
+      {
+        "name": "geboortejaar",
+        "title": ""
+      },
+      {
+        "name": "functions",
+        "title": ""
+      },
+      {
+        "name": "h_life",
+        "title": ""
+      },
+      {
+        "name": "sg",
+        "title": ""
+      },
+      {
+        "name": "p_interval",
+        "title": ""
+      },
+      {
+        "name": "name",
+        "title": ""
+      },
+      {
+        "name": "tim_id",
+        "title": ""
+      },
+      {
+        "name": "colleges",
+        "title": ""
+      },
+      {
+        "name": "sterfjaar",
+        "title": ""
+      },
+      {
+        "name": "period",
+        "title": ""
+      },
+      {
+        "name": "was_gedeputeerde",
+        "title": ""
+      }
+    ],
+    "doc_name": "abbreviated_delegates"
+  }
+}

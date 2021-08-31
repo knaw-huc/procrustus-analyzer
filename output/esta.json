@@ -1,0 +1,1324 @@
+{
+  "metadata": {
+    "title": "ESTA",
+    "description": "ESTA test version Procrustus",
+    "project": "ESTA",
+    "author": "Rob Zeeman",
+    "date": "2021-01-26"
+  },
+  "data": {
+    "datasource": {
+      "type": "MySQL",
+      "mode": "R",
+      "properties": {
+        "server": "localhost",
+        "database": "esta",
+        "user": "root",
+        "password": "bonzo"
+      }
+    },
+    "entities": [
+      {
+        "entity": "actor",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "actor_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_name",
+            "attributes": {
+              "label": "Name",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_alias",
+            "attributes": {
+              "label": "Name standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_sex",
+            "attributes": {
+              "label": "Sex",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_role",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_presence",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_quantity",
+            "attributes": {
+              "label": "Possible overlap",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_descritption",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_notes",
+            "attributes": {
+              "label": "Notes",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_source",
+            "attributes": {
+              "label": "Source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "tmp",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "cargo",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "cargo_id",
+            "attributes": {
+              "label": "Cargo ID",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_commodity",
+            "attributes": {
+              "label": "Cargo commodity",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_commodity_standardized",
+            "attributes": {
+              "label": "Cargo commodity standardized",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_unit",
+            "attributes": {
+              "label": "Cargo unit",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_unit_standardized",
+            "attributes": {
+              "label": "Cargo unit standardized",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_quantity",
+            "attributes": {
+              "label": "Cargo quantity",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_quantity_standardized",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_value",
+            "attributes": {
+              "label": "Cargo value",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_notes",
+            "attributes": {
+              "label": "Notes",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cargo_source",
+            "attributes": {
+              "label": "Source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "subvoyage_subvoyage_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "demo",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "SUBVOYAGE_ID",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "DEPARTURE_PLACE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "DEPARTURE_REGION",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "DEPARTURE_DATE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "ARRIVAL_PLACE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "ARRIVAL_REGION",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "ARRIVAL_DATE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "VESSEL",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "VOYAGE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "TOTAL_SLAVES_BOARDED_ON_VOYAGE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "TOTAL_SLAVES_LANDED_ON_VOYAGE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "SLAVES_BOARDED_AT_DEPARTURE_LOCATION",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "SLAVES_LANDED_AT_ARRIVAL_LOCATION",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "CAPTAIN",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "ACTOR",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "NOTES",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "SOURCE",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "free_actors",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "type",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "actor_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "type_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "slaves",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "slaves_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_total",
+            "attributes": {
+              "label": "Total amount of slaves",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_total_standardized_min",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_total_standardized_max",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_total_standardized_total",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_total_status",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_mortality",
+            "attributes": {
+              "label": "Mortality",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_mortality_standardized",
+            "attributes": {
+              "label": "Mortality standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_subvoyage_id",
+            "attributes": {
+              "label": "Sub voyage",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_possible_overlap_id",
+            "attributes": {
+              "label": "Possible overlap",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_type",
+            "attributes": {
+              "label": "Type",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_type_standardized",
+            "attributes": {
+              "label": "Type standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_notes",
+            "attributes": {
+              "label": "Notes",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_source",
+            "attributes": {
+              "label": "Source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "tmp",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "slaves_group",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "group_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaves_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gr_sex",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gr_age_group",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gr_ethnicity",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gr_physical_state",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gr_quantity",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gr_quantity_standardized",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "subvoyage",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "subvoyage_id",
+            "attributes": {
+              "label": "ID",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "subvoyage_type",
+            "attributes": {
+              "label": "Type",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_location",
+            "attributes": {
+              "label": "Location of departure",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_location_standardized",
+            "attributes": {
+              "label": "Location of departure standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_location_status",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_as_source",
+            "attributes": {
+              "label": "Source departure date",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_year",
+            "attributes": {
+              "label": "Departure date year",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_month",
+            "attributes": {
+              "label": "Departure date month",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_day",
+            "attributes": {
+              "label": "Departure date day",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_year_to",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_month_to",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_day_to",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_status",
+            "attributes": {
+              "label": "Departure date status",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_dept_date_relative",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_location",
+            "attributes": {
+              "label": "Location of arrival",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_location_standardized",
+            "attributes": {
+              "label": "Location of arrival standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_location_status",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_as_source",
+            "attributes": {
+              "label": "Arrival date source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_year",
+            "attributes": {
+              "label": "Year of arrival standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_month",
+            "attributes": {
+              "label": "Month of arrival standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_day",
+            "attributes": {
+              "label": "Day of arrival standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_year_to",
+            "attributes": {
+              "label": "Range arrival year standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_month_to",
+            "attributes": {
+              "label": "Range arrival month standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_day_to",
+            "attributes": {
+              "label": "Range arrival day standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_status",
+            "attributes": {
+              "label": "Arrival date status",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_arrival_date_relative",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_vessel",
+            "attributes": {
+              "label": "Vessel",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_slaves",
+            "attributes": {
+              "label": "Slaves",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_possible_overlap1",
+            "attributes": {
+              "label": "Possible overlap",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_possible_overlap2",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_possible_overlap3",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "voyage_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "subvoyage_co-occurs_with",
+            "attributes": {
+              "label": "Co-occurrance",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "slaving_voyage_status",
+            "attributes": {
+              "label": "Slaving voyage status",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "subvoyage_notes",
+            "attributes": {
+              "label": "Notes",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sub_source",
+            "attributes": {
+              "label": "Source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "deleted",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "deleted_by",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "subvoyage_dependencies",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "voyage_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "grid",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "subvoyage_order",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "sub_order_ID",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "voyage_voyage_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "subvoyage_subvoyage_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "subvoyage_order",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "sys_mutations",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "tablename",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "fieldname",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "record_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "user",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "value_before",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "value_after",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "modification_date",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "transport",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_name",
+            "attributes": {
+              "label": "Name of vehicle as recorded in source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mat_name_standardized_author",
+            "attributes": {
+              "label": "Name of vehicle as standardized by author of data ",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_type",
+            "attributes": {
+              "label": "Type of means of transport as recorded in source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_type_standardized",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_capacity",
+            "attributes": {
+              "label": "Capacity as recorded in source including units where used",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_designation",
+            "attributes": {
+              "label": "Designation of vehicle (nationality, flag, etc.)",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_designation_standardized",
+            "attributes": {
+              "label": "Designation of vehicle in standardized spelling by author according to (international) convention",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_notes",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mot_source",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "users",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "chr_name",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "name",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "username",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "email",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "passwd",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "admin",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "active",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "vessel",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "vessel_id",
+            "attributes": {
+              "label": "ID",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_name",
+            "attributes": {
+              "label": "Vessel name",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_name_standardized",
+            "attributes": {
+              "label": "Vessel name standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_type",
+            "attributes": {
+              "label": "Vessel type",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_type_standardized",
+            "attributes": {
+              "label": "Vessel type standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_capacity",
+            "attributes": {
+              "label": "Tonnage",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_designation",
+            "attributes": {
+              "label": "Flag",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_designation_standardized",
+            "attributes": {
+              "label": "Flag standardised",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_notes",
+            "attributes": {
+              "label": "Notes",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "transport_source",
+            "attributes": {
+              "label": "Source",
+              "display": "yes",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "tmp",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "voyage",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "voyage_id",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "summary",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "year",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "created_by",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "modified_by",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "last_mutation",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "deleted",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "deleted_by",
+            "attributes": {
+              "display": "no"
+            },
+            "indexer": []
+          }
+        ]
+      }
+    ]
+  }
+}
