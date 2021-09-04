@@ -2,15 +2,21 @@
 /*Analyzer functions*/
 
 function parse($struc) {
+    $retJSON = array();
     if (isset($struc["data"]["datasource"]["type"])) {
         switch($struc["data"]["datasource"]["type"]) {
             case "MySQL":
                 write("Data source: MySQL");
-                parse_mysql($struc);
+                $retJSON = parse_mysql($struc);
+                break;
+            case "Timbuctoo":
+                write("Datasource: Timbuctoo");
+                $retJSON = parse_timbuctoo($struc);
                 break;
             default:
                 write("Unknown data source!");
         }
+        write_generated_model($retJSON);
     } else {
         die("No data source type defined!");
     }
@@ -33,9 +39,17 @@ function parse_mysql($struc) {
         $buffer["notions"] = add_mysql_notions($first, $db, $con);
         $struc["data"]["entities"][] = $buffer;
     }
-    $json = json_encode($struc);
-    file_put_contents(OUTPUT_DIR . CURRENT_MODEL . ".json", $json);
-    write("Ready");
+    return $struc;
+}
+
+function write_generated_model($struc) {
+    if (count($struc)) {
+        file_put_contents(OUTPUT_DIR . CURRENT_MODEL . ".json", json_encode($struc));
+        write("Ready");
+    } else {
+        write("No model generated!");
+    }
+
 }
 
 function add_mysql_notions($table, $db, $con) {

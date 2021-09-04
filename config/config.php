@@ -1,7 +1,7 @@
 <?php
 define('APPPATH', dirname(dirname(__FILE__)));
 define("MODEL_DIR", APPPATH . "/models/");
-define("CURRENT_MODEL", "esta");
+define("CURRENT_MODEL", "dwc");
 define("INDEX_MODELS", APPPATH . "/tim_index_models/");
 define("CURRENT_INDEX_MODEL", "abbreviated_delegates");
 define("OUTPUT_DIR", APPPATH . "/output/");

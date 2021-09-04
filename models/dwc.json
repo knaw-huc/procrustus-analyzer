@@ -8,11 +8,19 @@
   },
   "data": {
       "datasource": {
-          "type": "",
-          "properties": {
-              
-          }
+        "type": "Timbuctoo",
+        "mode": "R",
+        "properties": {
+          "server": "localhost",
+          "port": "8080",
+          "user": "fake"
+        }
       },
-      "entities": []
+      "dataset": {
+        "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc",
+        "name": "",
+        "title": "",
+        "entities": []
+      }
   }
 }

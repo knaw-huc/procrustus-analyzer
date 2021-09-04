@@ -1,0 +1,770 @@
+{
+  "metadata": {
+    "title": "DWC Browser",
+    "description": "First version HuC Browser for dataset DWC",
+    "project": "REPUBLIC",
+    "author": "Rob Zeeman",
+    "date": "2021-01-26"
+  },
+  "data": {
+    "datasource": {
+      "type": "Timbuctoo",
+      "mode": "R",
+      "properties": {
+        "server": "localhost",
+        "port": "8080",
+        "user": "fake"
+      }
+    },
+    "dataset": {
+      "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc",
+      "name": "",
+      "title": "",
+      "entities": [
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Residence",
+          "name": "clusius_Residence",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_beginDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasLocation",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Places"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_endDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasResident",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Provenance",
+          "name": "clusius_Provenance",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasProvenanceType",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Provenance_type"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_title",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_isProvenanceAboutPerson",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Occupation",
+          "name": "clusius_Occupation",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_beginDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_description",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_isOccupationOf",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_endDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons",
+          "name": "clusius_Persons",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasResidentList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Residence_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_deathDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_namesList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_person_name_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_isProvenanceAboutPersonList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Provenance_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasDeathPlace",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Places"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_gender",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_isScientistBioOf",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Biography"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_birthDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_isOccupationOfList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Occupation_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasBirthPlace",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Places"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_isEducationOfList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Education_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasMember",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Membership"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Fields_of_interest",
+          "name": "clusius_Fields_of_interest",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasFieldOfInterestList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Biography_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_value",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Education",
+          "name": "clusius_Education",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_beginDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_description",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_endDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_isEducationOf",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Places",
+          "name": "clusius_Places",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "skos_altLabelList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasDeathPlaceList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_name",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_country",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasBirthPlaceList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasLocationList",
+              "type": {
+                "name": "Union_u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Residence__u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Membership__u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Institutes___List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_latitude",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_schema_latitude"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_longitude",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_schema_longitude"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_remarks",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Institutes",
+          "name": "clusius_Institutes",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "skos_altLabelList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasLocation",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Places"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasInstitute",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Membership"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Provenance_type",
+          "name": "clusius_Provenance_type",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "_inverse_tim_hasProvenanceTypeList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Provenance_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_value",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Membership",
+          "name": "clusius_Membership",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasMember",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_beginDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasLocation",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Places"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_description",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_endDate",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_custom_datable"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasInstitute",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Institutes"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        },
+        {
+          "id": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Biography",
+          "name": "clusius_Biography",
+          "is_root": "no",
+          "notions": [
+            {
+              "name": "uri",
+              "type": {
+                "name": null
+              },
+              "label": "",
+              "index": "yes",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_isScientistBioOf",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Persons"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_original_id",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_hasFieldOfInterestList",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_clusius_Fields_of_interest_List"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_highest_degree",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            },
+            {
+              "name": "tim_biography",
+              "type": {
+                "name": "u33707283d426f900d4d33707283d426f900d4d0d__dwc_value_xsd_string"
+              },
+              "label": "",
+              "index": "no",
+              "root_index": "no"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
