@@ -61,13 +61,14 @@ function filter_input_fields($schema)
     foreach ($s as $key => $value) {
         if (!in_array($value["name"], $system_fields)) {
             $buffer = $s[$key];
-            $buffer["label"] = "";
+            $buffer["display"] = array("label" => $value["name"], "hyperlink" => "none", "order" => 9999);
+            $buffer["index"] = array("in_index" => "no", "index_field_name" => $value["name"], "root_index" => array());
             if ($value["name"] == "uri") {
-                $buffer["index"] = "yes";
+                $buffer["index"]["in_index"] = "yes";
+                $buffer["display"]["hyperlink"] = "timbuctoo_uri";
             } else {
-                $buffer["index"] = "no";
+                $buffer["index"]["in_index"] = "no";
             }
-            $buffer["root_index"] = "no";
             $retArray[] = $buffer;
         }
     }
