@@ -9,6 +9,10 @@ function parse($struc) {
                 write("Data source: MySQL");
                 $retJSON = parse_mysql($struc);
                 break;
+            case "PostgresDB":
+                write("Data source: Postgres DB");
+                $retJSON = parse_postgres($struc);
+                break;
             case "Timbuctoo":
                 write("Datasource: Timbuctoo");
                 $retJSON = parse_timbuctoo($struc);
@@ -42,6 +46,38 @@ function parse_mysql($struc) {
     return $struc;
 }
 
+function parse_postgres($struc) {
+    $con = get_postgres_connect_str($struc);
+    $pdb = new pdb($con);
+
+    $tables = $pdb->get_tables();
+    foreach ($tables as $table) {
+        echo $table["tablename"] . "\n";
+        $buffer = array();
+        $buffer["entity"] = $table["tablename"];
+        $buffer["is_root"] = "no";
+        $buffer["notions"] = add_postgres_notions($table["tablename"], $pdb);
+        $struc["data"]["entities"][] = $buffer;
+    }
+    return $struc;
+}
+
+
+
+function get_postgres_connect_str($struc) {
+    $db_server = $struc["data"]["datasource"]["properties"]["server"];
+    if (isset($struc["data"]["datasource"]["properties"]["port"])) {
+        $db_port = $struc["data"]["datasource"]["properties"]["port"];
+    } else {
+        $db_port = "5432";
+    }
+    $db_user = $struc["data"]["datasource"]["properties"]["user"];
+    $db_passwd = $struc["data"]["datasource"]["properties"]["password"];
+    $db_name = $struc["data"]["datasource"]["properties"]["database"];
+
+    return "host=$db_server port=$db_port dbname=$db_name user=$db_user password=$db_passwd";
+}
+
 function write_generated_model($struc) {
     if (count($struc)) {
         file_put_contents(OUTPUT_DIR . CURRENT_MODEL . ".json", json_encode($struc));
@@ -57,6 +93,11 @@ function add_mysql_notions($table, $db, $con) {
     return process_mysql_fields($fields);
 }
 
+function add_postgres_notions($table, $pdb) {
+    $fields = $pdb->get_fields($table);
+    return process_postgres_fields($fields);
+}
+
 function process_mysql_fields($fields) {
     $retArray = array();
     foreach ($fields["data"] as $field) {
@@ -69,8 +110,26 @@ function process_mysql_fields($fields) {
             $buffer["attributes"]["display"] = "yes";
             $buffer["attributes"]["display_order"] = "0";
         } else {
+            $buffer["attributes"]["label"] =  $field["Field"];
             $buffer["attributes"]["display"] = "no";
+            $buffer["attributes"]["display_order"] = "0";
         }
+        $retArray[] = $buffer;
+    }
+    return $retArray;
+}
+
+function process_postgres_fields($fields) {
+    $retArray = array();
+    foreach ($fields as $field) {
+        $buffer = array();
+        $buffer["notion"] = $field["column_name"];
+        $buffer["attributes"] = array();
+        $buffer["indexer"] = array();
+        $buffer["attributes"]["label"] =  $field["column_name"];
+        $buffer["attributes"]["display"] = "no";
+        $buffer["attributes"]["display_order"] = "0";
+
         $retArray[] = $buffer;
     }
     return $retArray;

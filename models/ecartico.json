@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "title": "ECARTICO Browser",
+    "description": "ECARTICO",
+    "project": "Golden Agents",
+    "author": "Rob Zeeman",
+    "date": "2021-10-10"
+  },
+  "data": {
+    "datasource": {
+      "type": "Timbuctoo",
+      "mode": "R",
+      "properties": {
+        "server": "https://repository.goldenagents.org/v5",
+        "port": "80",
+        "user": "fake"
+      }
+    },
+    "dataset": {
+      "id": "ufab7d657a250e3461361c982ce9b38f3816e0c4b__ecartico_20200316",
+      "name": "",
+      "title": "",
+      "entities": []
+    }
+  }
+}

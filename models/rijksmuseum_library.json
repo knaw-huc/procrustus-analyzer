@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "title": "Rijksmuseum Browser",
+    "description": "Rijksmuseum Library",
+    "project": "Golden Agents",
+    "author": "Rob Zeeman",
+    "date": "2021-10-12"
+  },
+  "data": {
+    "datasource": {
+      "type": "Timbuctoo",
+      "mode": "R",
+      "properties": {
+        "server": "https://repository.goldenagents.org/v5",
+        "port": "80",
+        "user": "fake"
+      }
+    },
+    "dataset": {
+      "id": "u692bc364e9d7fa97b3510c6c0c8f2bb9a0e5123b__ga_stcn_rmlibrary_20210908",
+      "name": "",
+      "title": "",
+      "entities": []
+    }
+  }
+}

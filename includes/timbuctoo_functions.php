@@ -6,6 +6,7 @@ function parse_timbuctoo($struc) {
     global $tq;
     if (isset($struc["data"]["dataset"]["id"])) {
         $obj = $tq->getObjectFields($struc["data"]["dataset"]["id"]);
+        print_r($obj);
         if (isset($struc["data"]["dataset"]["entities"])) {
             $struc["data"]["dataset"]["entities"] = get_objects($obj["data"]["__type"]["fields"]);
         } else {

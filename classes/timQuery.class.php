@@ -8,7 +8,7 @@ class timQuery
         $options = array();
         $options[] = 'Accept: application/json';
 
-            $options[] = 'Authorization: fake';
+            $options[] = 'Authorization: ' . AUTH;
 
 
         $ch = curl_init(TIMBUCTOO_SERVER . '?query=' . urlencode($json));

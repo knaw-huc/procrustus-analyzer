@@ -1,7 +1,7 @@
 <?php
 
 require_once "./config/config.php";
-require_once "./classes/db.class.php";
+require_once "./classes/mysql.class.php";
 require_once "./classes/timQuery.class.php";
 require "./includes/functions.php";
 

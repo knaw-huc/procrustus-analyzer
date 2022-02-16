@@ -1,0 +1,1872 @@
+{
+  "metadata": {
+    "title": "Isidore",
+    "description": "Isidore test version Procrustus",
+    "project": "Isidore",
+    "author": "Rob Zeeman",
+    "date": "2022-02-15"
+  },
+  "data": {
+    "datasource": {
+      "type": "PostgresDB",
+      "mode": "R",
+      "properties": {
+        "server": "localhost",
+        "port": "5432",
+        "database": "isidore",
+        "user": "robzeeman",
+        "password": "bonzo"
+      }
+    },
+    "entities": [
+      {
+        "entity": "manuscripts",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "label": "id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "steinova",
+            "attributes": {
+              "label": "steinova",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "anspach",
+            "attributes": {
+              "label": "anspach",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "bischoff",
+            "attributes": {
+              "label": "bischoff",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "cla",
+            "attributes": {
+              "label": "cla",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "siglum",
+            "attributes": {
+              "label": "siglum",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "former_shelfmarks",
+            "attributes": {
+              "label": "former_shelfmarks",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "anspach_date",
+            "attributes": {
+              "label": "anspach_date",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "accepted_date",
+            "attributes": {
+              "label": "accepted_date",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "date_numerical",
+            "attributes": {
+              "label": "date_numerical",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "date_edtf",
+            "attributes": {
+              "label": "date_edtf",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "date_from",
+            "attributes": {
+              "label": "date_from",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "date_to",
+            "attributes": {
+              "label": "date_to",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "provenance_absolute",
+            "attributes": {
+              "label": "provenance_absolute",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "no_of_folia",
+            "attributes": {
+              "label": "no_of_folia",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "page_height_min",
+            "attributes": {
+              "label": "page_height_min",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "page_height_max",
+            "attributes": {
+              "label": "page_height_max",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "page_width_min",
+            "attributes": {
+              "label": "page_width_min",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "page_width_max",
+            "attributes": {
+              "label": "page_width_max",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "writing_window_height_min",
+            "attributes": {
+              "label": "writing_window_height_min",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "writing_window_height_max",
+            "attributes": {
+              "label": "writing_window_height_max",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "writing_window_width_min",
+            "attributes": {
+              "label": "writing_window_width_min",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "writing_window_width_max",
+            "attributes": {
+              "label": "writing_window_width_max",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "lines",
+            "attributes": {
+              "label": "lines",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "columns",
+            "attributes": {
+              "label": "columns",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "physical_state_scaled",
+            "attributes": {
+              "label": "physical_state_scaled",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "physical_state_detail",
+            "attributes": {
+              "label": "physical_state_detail",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "material_type",
+            "attributes": {
+              "label": "material_type",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "content_detail",
+            "attributes": {
+              "label": "content_detail",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "content_location",
+            "attributes": {
+              "label": "content_location",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "additional_content_scaled",
+            "attributes": {
+              "label": "additional_content_scaled",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "additional_content_absolute",
+            "attributes": {
+              "label": "additional_content_absolute",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "collection_larger_unit",
+            "attributes": {
+              "label": "collection_larger_unit",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url_collection_larger_unit",
+            "attributes": {
+              "label": "url_collection_larger_unit",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "innovations",
+            "attributes": {
+              "label": "innovations",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "additional_observations",
+            "attributes": {
+              "label": "additional_observations",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url_images_1",
+            "attributes": {
+              "label": "url_images_1",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url_images_2",
+            "attributes": {
+              "label": "url_images_2",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url_other",
+            "attributes": {
+              "label": "url_other",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "iiif",
+            "attributes": {
+              "label": "iiif",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "bibliography",
+            "attributes": {
+              "label": "bibliography",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "created_on",
+            "attributes": {
+              "label": "created_on",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "created_by",
+            "attributes": {
+              "label": "created_by",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "last_updated_on",
+            "attributes": {
+              "label": "last_updated_on",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "contributions_from",
+            "attributes": {
+              "label": "contributions_from",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "completeness_of_the_record",
+            "attributes": {
+              "label": "completeness_of_the_record",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_scaled_places",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "place_id",
+            "attributes": {
+              "label": "place_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "scaled_places",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "place_id",
+            "attributes": {
+              "label": "place_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "place",
+            "attributes": {
+              "label": "place",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gps_latitude",
+            "attributes": {
+              "label": "gps_latitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gps_longitude",
+            "attributes": {
+              "label": "gps_longitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "latitude",
+            "attributes": {
+              "label": "latitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "longitude",
+            "attributes": {
+              "label": "longitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_absolute_places",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "place_id",
+            "attributes": {
+              "label": "place_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "certainty",
+            "attributes": {
+              "label": "certainty",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "absolute_places",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "place_id",
+            "attributes": {
+              "label": "place_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "place_absolute",
+            "attributes": {
+              "label": "place_absolute",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gps_latitude",
+            "attributes": {
+              "label": "gps_latitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gps_longitude",
+            "attributes": {
+              "label": "gps_longitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "country",
+            "attributes": {
+              "label": "country",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "country_geonames",
+            "attributes": {
+              "label": "country_geonames",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "latitude",
+            "attributes": {
+              "label": "latitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "longitude",
+            "attributes": {
+              "label": "longitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "geonames_id",
+            "attributes": {
+              "label": "geonames_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "geonames_uri",
+            "attributes": {
+              "label": "geonames_uri",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_scaled_dates",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "date_id",
+            "attributes": {
+              "label": "date_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "scaled_dates",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "date_id",
+            "attributes": {
+              "label": "date_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "date",
+            "attributes": {
+              "label": "date",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "lower_date",
+            "attributes": {
+              "label": "lower_date",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "upper_date",
+            "attributes": {
+              "label": "upper_date",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "books",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "label": "id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "roman",
+            "attributes": {
+              "label": "roman",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "sections",
+            "attributes": {
+              "label": "sections",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "image_subscripts",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "subscript",
+            "attributes": {
+              "label": "subscript",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_books_included",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "b_id",
+            "attributes": {
+              "label": "b_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_content_types",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "type_id",
+            "attributes": {
+              "label": "type_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "content_types",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "type_id",
+            "attributes": {
+              "label": "type_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "content_type",
+            "attributes": {
+              "label": "content_type",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "books_from_meindert",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "label": "id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "roman",
+            "attributes": {
+              "label": "roman",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "scripts",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "script_id",
+            "attributes": {
+              "label": "script_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "script",
+            "attributes": {
+              "label": "script",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "designed_as",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "design_id",
+            "attributes": {
+              "label": "design_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "designed_as",
+            "attributes": {
+              "label": "designed_as",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_scripts",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "script_id",
+            "attributes": {
+              "label": "script_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_designed_as",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "design_id",
+            "attributes": {
+              "label": "design_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_details_locations",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "material_type",
+            "attributes": {
+              "label": "material_type",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "books_included",
+            "attributes": {
+              "label": "books_included",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "details",
+            "attributes": {
+              "label": "details",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "locations",
+            "attributes": {
+              "label": "locations",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_viaf",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "id",
+            "attributes": {
+              "label": "id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "additional_content_scaled",
+            "attributes": {
+              "label": "additional_content_scaled",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "viaf_id",
+            "attributes": {
+              "label": "viaf_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "viaf_url",
+            "attributes": {
+              "label": "viaf_url",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "full_name_1",
+            "attributes": {
+              "label": "full_name_1",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "full_name_2",
+            "attributes": {
+              "label": "full_name_2",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "biblissima_author_url",
+            "attributes": {
+              "label": "biblissima_author_url",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscript_current_places",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "lib_id",
+            "attributes": {
+              "label": "lib_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "library",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "lib_id",
+            "attributes": {
+              "label": "lib_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "lib_name",
+            "attributes": {
+              "label": "lib_name",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gps_latitude",
+            "attributes": {
+              "label": "gps_latitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "gps_longitude",
+            "attributes": {
+              "label": "gps_longitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "place_name",
+            "attributes": {
+              "label": "place_name",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "country",
+            "attributes": {
+              "label": "country",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "country_geonames",
+            "attributes": {
+              "label": "country_geonames",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "latitude",
+            "attributes": {
+              "label": "latitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "longitude",
+            "attributes": {
+              "label": "longitude",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "geonames_id",
+            "attributes": {
+              "label": "geonames_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "geonames_uri",
+            "attributes": {
+              "label": "geonames_uri",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "relationships",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "rel_mss_id",
+            "attributes": {
+              "label": "rel_mss_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "rel_mss_other",
+            "attributes": {
+              "label": "rel_mss_other",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "reason",
+            "attributes": {
+              "label": "reason",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_source_of_dating",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "s_id",
+            "attributes": {
+              "label": "s_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "source_of_dating",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "s_id",
+            "attributes": {
+              "label": "s_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "source",
+            "attributes": {
+              "label": "source",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_provenance_scaled",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "p_id",
+            "attributes": {
+              "label": "p_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "provenance_scaled",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "p_id",
+            "attributes": {
+              "label": "p_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "provenance",
+            "attributes": {
+              "label": "provenance",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "diagrams",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "diagram_type",
+            "attributes": {
+              "label": "diagram_type",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "folia",
+            "attributes": {
+              "label": "folia",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url",
+            "attributes": {
+              "label": "url",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "description",
+            "attributes": {
+              "label": "description",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "interpolations",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "interpolation",
+            "attributes": {
+              "label": "interpolation",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "folia",
+            "attributes": {
+              "label": "folia",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url",
+            "attributes": {
+              "label": "url",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "description",
+            "attributes": {
+              "label": "description",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "easter_table",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "easter_table_type",
+            "attributes": {
+              "label": "easter_table_type",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "folia",
+            "attributes": {
+              "label": "folia",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "remarks",
+            "attributes": {
+              "label": "remarks",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "annotations",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "number_of_annotations",
+            "attributes": {
+              "label": "number_of_annotations",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "amount",
+            "attributes": {
+              "label": "amount",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "books",
+            "attributes": {
+              "label": "books",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "language",
+            "attributes": {
+              "label": "language",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url",
+            "attributes": {
+              "label": "url",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "remarks",
+            "attributes": {
+              "label": "remarks",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "url",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "url_images",
+            "attributes": {
+              "label": "url_images",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "label",
+            "attributes": {
+              "label": "label",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "biblissima_author_url",
+            "attributes": {
+              "label": "biblissima_author_url",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "mirabileweb",
+            "attributes": {
+              "label": "mirabileweb",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "trismegistos",
+            "attributes": {
+              "label": "trismegistos",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "fama",
+            "attributes": {
+              "label": "fama",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "manuscripta_medica",
+            "attributes": {
+              "label": "manuscripta_medica",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "jordanus",
+            "attributes": {
+              "label": "jordanus",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "bstk_online",
+            "attributes": {
+              "label": "bstk_online",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "handschriftencensus",
+            "attributes": {
+              "label": "handschriftencensus",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "dhbm",
+            "attributes": {
+              "label": "dhbm",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "bibliotheca_legum",
+            "attributes": {
+              "label": "bibliotheca_legum",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "capitularia",
+            "attributes": {
+              "label": "capitularia",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "other_links",
+            "attributes": {
+              "label": "other_links",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "label_other_links",
+            "attributes": {
+              "label": "label_other_links",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "iiif_manifest",
+            "attributes": {
+              "label": "iiif_manifest",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "copyright_status",
+            "attributes": {
+              "label": "copyright_status",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "permission_from_the_library",
+            "attributes": {
+              "label": "permission_from_the_library",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "image_published",
+            "attributes": {
+              "label": "image_published",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      },
+      {
+        "entity": "manuscripts_library",
+        "is_root": "no",
+        "notions": [
+          {
+            "notion": "m_id",
+            "attributes": {
+              "label": "m_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "shelfmark",
+            "attributes": {
+              "label": "shelfmark",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          },
+          {
+            "notion": "lib_id",
+            "attributes": {
+              "label": "lib_id",
+              "display": "no",
+              "display_order": "0"
+            },
+            "indexer": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 <?php
 require_once "./config/config.php";
-require_once "./classes/db.class.php";
+require_once "./classes/mysql.class.php";
+require_once "./classes/postgres.class.php";
 require_once "./classes/timQuery.class.php";
 require_once "./includes/timbuctoo_functions.php";
 require "./includes/functions.php";
